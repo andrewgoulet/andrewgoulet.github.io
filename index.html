@@ -1,23 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link rel="shortcut icon" type="image/x-icon" href="music_musica_5279.ico">
+  <meta charset="UTF-8">
   <title>Andy Goulet</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="music_musica_5279.ico">
   <style>
+    body {
+      background-color: #101010;
+      color: #ffffff;
+      font-family: montserrat, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1, h2, h3, p, div {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border: 10px solid black;
+    }
+
     .player-container {
       max-width: 600px;
       margin: 40px auto;
     }
 
-    body {
-      background-color: #101010;
-      color: #ffffff;
-      font-family: montserrat, sans-serif;
+    audio {
+      width: 100%;
     }
-
-    h1 { text-align: center; font-size: 2.5em; }
-    p, div { text-align: center; }
 
     a:link, a:visited {
       background-color: #808080;
@@ -25,50 +44,67 @@
       padding: 35px 45px;
       text-align: center;
       text-decoration: none;
-      overflow: auto;
+      display: inline-block;
+      margin: 10px auto;
     }
 
     a:hover, a:active {
       background-color: green;
     }
+
+    hr {
+      margin: 40px 0;
+    }
+
+    footer {
+      font-size: 10px;
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
 
-<h1>Andy Goulet</h1>
-<p><img src="docs/assets/AG-BW-PEDAL-STEEL.jpg" alt="Andy Goulet sitting at a pedal steel guitar" style="border:10px solid black"/></p>
+  <h1>Andy Goulet</h1>
 
-<h2>Musician / Writer / Actor</h2>
+  <p>
+    <img src="docs/assets/AG-BW-PEDAL-STEEL.jpg" alt="Andy Goulet sitting at a pedal steel guitar">
+  </p>
 
-<p><a href="mailto: andy@andygoulet.com">Email</a></p>
+  <h2>Musician / Writer / Actor</h2>
 
-<hr>
+  <p><a href="mailto:andy@andygoulet.com">Email</a></p>
 
-<h2>Shows</h2>
-<p><b>8/23/25</b>, 6 PM with Brandee Simone at Four Phantoms Brewery, Greenfield MA</p>
-<p><b>8/25/25</b>, 7 PM with APIE at Desperate Annie's, Saratoga Springs NY</p>
+  <hr>
 
-<hr>
+  <h2>Shows</h2>
+  <p><b>8/23/25</b>, 6 PM with Brandee Simone at Four Phantoms Brewery, Greenfield MA</p>
+  <p><b>8/25/25</b>, 7 PM with APIE at Desperate Annie's, Saratoga Springs NY</p>
 
-<h2>Sounds</h2>
-<div class="player-container">
-  <h3>Steel Meditations: Night Birds</h3>
-  <audio controls style="width: 100%;">
-    <source src="music/Night Birds.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-</div>
-  
-<div class="player-container">
-  <h3>APIE at the Shea Theater, Turners Falls MA 8/15/22</h3>
-  <audio controls style="width: 100%;">
-    <source src="APIE-Cheapo-Wine.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-</div>
+  <hr>
 
-<hr>
-<p style="font-size: 10px;">Photo by Brandi Ediss</p> 
+  <h2>Sounds</h2>
+
+  <div class="player-container">
+    <h3>Steel Meditations: Night Birds</h3>
+    <audio controls>
+      <source src="music/Night-Birds.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <div class="player-container">
+    <h3>APIE at the Shea Theater, Turners Falls MA 8/15/22</h3>
+    <audio controls>
+      <source src="APIE-Cheapo-Wine.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <hr>
+
+  <footer>
+    <p>Photo by Brandi Ediss</p>
+  </footer>
 
 </body>
 </html>
