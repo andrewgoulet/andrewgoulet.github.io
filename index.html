@@ -77,28 +77,29 @@
     }
 
     /* SCROLLING TEXT STYLES */
-    .scrolling-text {
-      position: fixed;
-      bottom: 40px; /* Just above the footer */
-      left: 0;
-      width: 100%;
-      white-space: nowrap;
-      font-size: 24px;
-      color: #32CD32;
-      text-align: center;
-      animation: scroll-left 12s linear infinite;
-      pointer-events: none;
-      z-index: 1000;
-    }
+   .scrolling-text {
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  width: 100%;
+  white-space: nowrap;
+  font-size: 24px;
+  color: #00ffcc;
+  text-align: center;
+  animation: scroll-left 12s linear infinite;
+  pointer-events: none;
+  z-index: 1000;
+}
 
-    @keyframes scroll-left {
-      0% {
-        transform: translateX(100%);
-      }
-      100% {
-        transform: translateX(-100%);
-      }
-    }
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
   </style>
 </head>
 <body>
