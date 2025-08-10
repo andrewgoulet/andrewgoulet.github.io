@@ -75,6 +75,30 @@
       font-size: 10px;
       margin-top: 40px;
     }
+
+    /* SCROLLING TEXT STYLES */
+    .scrolling-text {
+      position: fixed;
+      bottom: 40px; /* Just above the footer */
+      left: 0;
+      width: 100%;
+      white-space: nowrap;
+      font-size: 24px;
+      color: #00ffcc;
+      text-align: center;
+      animation: scroll-left 12s linear infinite;
+      pointer-events: none;
+      z-index: 1000;
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
   </style>
 </head>
 <body>
@@ -91,7 +115,6 @@
   <p><a href="https://archive.org/details/@ajg765/lists/1/andy-goulet---music" target="_blank">Music</a></p>
   <p><a href="https://archive.org/details/@ajg765/lists/2/andy-goulet---writing" target="_blank">Writing</a></p>
 
-
   <hr />
   <br>
   <h2>Shows</h2>
@@ -99,46 +122,45 @@
   <p><b>8/23/25</b>, 6 PM with Brandee Simone AND Original Cowards at Four Phantoms Brewery, Greenfield MA</p>
   <br>
   <p><b>8/25/25</b>, 7 PM with APIE at Desperate Annie's, Saratoga Springs NY</p>
-    <br>
+  <br>
   <p><b>9/7/25</b>, 7 PM with APIE at Belltower Records, North Adams MA</p>
-    <br>
+  <br>
   <p><b>9/15/25</b>, 7 PM with Bill Knittle at the Iron Horse, Northampton MA</p>
-    <br>
+  <br>
   <p><b>12/6/25</b>, 7 PM with APIE at Union Pool, Brooklyn NYC</p>
-    <br>
+  <br>
   <p><b>12/7/25</b>, 7 PM with APIE, Boston MA</p>
   <br>
   <hr />
   <br>
- <h2>Collaborations</h2>
-<div style="display: flex; justify-content: center; text-align: center;">
-  <ul style="list-style-type: none; padding: 0;">
-        <li><a href="https://halfamillion.bandcamp.com/album/animal-piss-its-everywhere" target="_blank">Animal Piss, It's Everywhere - <em>Animal Piss, It's Everywhere</em></a></li>    
-        <li><a href="https://halfamillion.bandcamp.com/album/grace" target="_blank">Animal Piss, It's Everywhere - <em>Grace</em></a></li>
-        <li><a href="https://creativewriting.bandcamp.com/track/true-90s" target="_blank">Creative Writing - "True 90s"</a></li>
-        <li><a href="https://gentlehen.bandcamp.com/album/sneaking-up-on-the-moon" target="_blank">Gentle Hen - "Sneaking Up on the Moon"</a></li>
-        <li><a href="https://gentlehen.bandcamp.com/track/a-few-more-lifetimes" target="_blank">Gentle Hen - "A Few More Lifetimes"</a></li>
-        <li><a href="https://gentlehen.bandcamp.com/track/rock-and-roll-camper-live-at-the-parlor-room-september-10-2017" target="_blank">Gentle Hen - "Rock and Roll Camper - Live at the Parlor Room - September 10, 2017"</a></li>
-        <li><a href="https://feedingtuberecords.bandcamp.com/album/may-13th-2014" target="_blank">Laminated Apes - <em>May 13th 2014</em></a></li>
-        <li><a href="https://youtu.be/WxnkSzkCMqU?feature=shared" target="_blank">The Lonesome Brothers - "Early in the Spring"</a></li>
-        <li><a href="https://youtu.be/E8aNz0aMo2U?feature=shared" target="_blank">The Lonesome Brothers - "All Around You"</a></li>
-        <li><a href="https://lordruss.bandcamp.com/track/it-is-so-nice-to-get-stoned" target="_blank">Lord Russ - "It Is So Nice to Get Stoned"</a></li>
-        <li><a href="https://www.youtube.com/watch?v=iuIu-uG7vY4&list=PLsZPRnPvhMVuYFJxT0jsZ4YU2RBgliQoa" target="_blank">Mark Mulcahy - <em>Taking Baby Steps</em></a></li>
-        <li><a href="https://mysticsanonymous.bandcamp.com/album/she-wanted-the-future" target="_blank">Mystics Anonymous - <em>She Wanted the Future</em></a></li>
-        <li><a href="https://youtu.be/c5OEaXA-KgE?feature=shared" target="_blank">Mystics Anonymous - "Turn Signal in the Trees"</a></li>
-        <li><a href="https://originalcowards.bandcamp.com/track/lowlands" target="_blank">Original Cowards - "Lowlands"</a></li>
-        <li><a href="https://originalcowards.bandcamp.com/track/phoebe" target="_blank">Original Cowards - "Phoebe"</a></li>
-        <li><a href="https://salvationalley.bandcamp.com/album/enjoy-this-while-it-lasts" target="_blank">Salvation Alley String Band - <em>Enjoy This While It Lasts</em></a></li>
-        <li><a href="https://salvationalley.bandcamp.com/album/the-pioneer-valley-rose-and-other-favorites" target="_blank">Salvation Alley String Band - <em>The Pioneer Valley Rose and Other Favorites</em></a></li>
-        <li><a href="https://youtu.be/-IwB-fiDrzA?feature=shared" target="_blank">Salvation Alley String Band - <em>The Merciless Scythe of Time</em></a></li>
-      
-
+  <h2>Collaborations</h2>
+  <div style="display: flex; justify-content: center; text-align: center;">
+    <ul style="list-style-type: none; padding: 0;">
+      <!-- (your list of collaborations remains unchanged) -->
+      <li><a href="https://halfamillion.bandcamp.com/album/animal-piss-its-everywhere" target="_blank">Animal Piss, It's Everywhere - <em>Animal Piss, It's Everywhere</em></a></li>    
+      <li><a href="https://halfamillion.bandcamp.com/album/grace" target="_blank">Animal Piss, It's Everywhere - <em>Grace</em></a></li>
+      <li><a href="https://creativewriting.bandcamp.com/track/true-90s" target="_blank">Creative Writing - "True 90s"</a></li>
+      <li><a href="https://gentlehen.bandcamp.com/album/sneaking-up-on-the-moon" target="_blank">Gentle Hen - "Sneaking Up on the Moon"</a></li>
+      <li><a href="https://gentlehen.bandcamp.com/track/a-few-more-lifetimes" target="_blank">Gentle Hen - "A Few More Lifetimes"</a></li>
+      <li><a href="https://gentlehen.bandcamp.com/track/rock-and-roll-camper-live-at-the-parlor-room-september-10-2017" target="_blank">Gentle Hen - "Rock and Roll Camper - Live at the Parlor Room - September 10, 2017"</a></li>
+      <li><a href="https://feedingtuberecords.bandcamp.com/album/may-13th-2014" target="_blank">Laminated Apes - <em>May 13th 2014</em></a></li>
+      <li><a href="https://youtu.be/WxnkSzkCMqU?feature=shared" target="_blank">The Lonesome Brothers - "Early in the Spring"</a></li>
+      <li><a href="https://youtu.be/E8aNz0aMo2U?feature=shared" target="_blank">The Lonesome Brothers - "All Around You"</a></li>
+      <li><a href="https://lordruss.bandcamp.com/track/it-is-so-nice-to-get-stoned" target="_blank">Lord Russ - "It Is So Nice to Get Stoned"</a></li>
+      <li><a href="https://www.youtube.com/watch?v=iuIu-uG7vY4&list=PLsZPRnPvhMVuYFJxT0jsZ4YU2RBgliQoa" target="_blank">Mark Mulcahy - <em>Taking Baby Steps</em></a></li>
+      <li><a href="https://mysticsanonymous.bandcamp.com/album/she-wanted-the-future" target="_blank">Mystics Anonymous - <em>She Wanted the Future</em></a></li>
+      <li><a href="https://youtu.be/c5OEaXA-KgE?feature=shared" target="_blank">Mystics Anonymous - "Turn Signal in the Trees"</a></li>
+      <li><a href="https://originalcowards.bandcamp.com/track/lowlands" target="_blank">Original Cowards - "Lowlands"</a></li>
+      <li><a href="https://originalcowards.bandcamp.com/track/phoebe" target="_blank">Original Cowards - "Phoebe"</a></li>
+      <li><a href="https://salvationalley.bandcamp.com/album/enjoy-this-while-it-lasts" target="_blank">Salvation Alley String Band - <em>Enjoy This While It Lasts</em></a></li>
+      <li><a href="https://salvationalley.bandcamp.com/album/the-pioneer-valley-rose-and-other-favorites" target="_blank">Salvation Alley String Band - <em>The Pioneer Valley Rose and Other Favorites</em></a></li>
+      <li><a href="https://youtu.be/-IwB-fiDrzA?feature=shared" target="_blank">Salvation Alley String Band - <em>The Merciless Scythe of Time</em></a></li>
     </ul>
-</div>
+  </div>
+
+  <!-- 🔽 Scrolling text injected here -->
+  <div class="scrolling-text">New music added: True Value</div>
+
   <hr />
   <footer>
-    <p>Photo by Brandi Ediss</p>
-  </footer>
-
-</body>
-</html>
+    <p>Photo by Brandi Ediss</p
