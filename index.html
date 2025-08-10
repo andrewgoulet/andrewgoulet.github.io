@@ -76,33 +76,6 @@
       margin-top: 40px;
     }
 
-    /* SCROLLING TEXT STYLES */
-    .scrolling-container {
-    position: fixed;
-    bottom: 40px;
-    left: 0;
-    width: 100vw;
-    overflow: hidden;
-    pointer-events: none;
-    z-index: 1000;
-  }
-    .scrolling-text {
-    display: inline-block;
-    white-space: nowrap;
-    font-size: 24px;
-    color: #32CD32; /* Lime Green */
-    animation: scroll-left 15s linear infinite;
-  }
-
-@keyframes scroll-left {
-  0% {
-    transform: translateX(100vw);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
   </style>
 </head>
 <body>
@@ -162,11 +135,10 @@
     </ul>
   </div>
 
-  <!-- 🔽 Scrolling text injected here -->
-  
-<div class="scrolling-container">
-  <div class="scrolling-text">Thanks for visiting my new site! I'm slowly collecting and uploading music and writing, so check back once in a while.</div>
-
   <hr />
   <footer>
-    <p>Photo by Brandi Ediss</p
+    <p>Photo by Brandi Ediss</p>
+  </footer>
+
+</body>
+</html>
