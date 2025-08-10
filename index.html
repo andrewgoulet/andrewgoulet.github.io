@@ -77,19 +77,22 @@
     }
 
     /* SCROLLING TEXT STYLES */
-   .scrolling-text {
-  position: fixed;
-  bottom: 40px;
-  left: 0;
-  width: 100%;
-  white-space: nowrap;
-  font-size: 24px;
-  color: #32CD32;
-  text-align: center;
-  animation: scroll-left 12s linear infinite;
-  pointer-events: none;
-  z-index: 1000;
-}
+    .scrolling-container {
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    width: 100vw;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1000;
+  }
+    .scrolling-text {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 24px;
+    color: #32CD32; /* Lime Green */
+    animation: scroll-left 15s linear infinite;
+  }
 
 @keyframes scroll-left {
   0% {
@@ -160,6 +163,8 @@
   </div>
 
   <!-- 🔽 Scrolling text injected here -->
+  
+<div class="scrolling-container">
   <div class="scrolling-text">Thanks for visiting my new site! I'm slowly collecting and uploading music and writing, so check back once in a while.</div>
 
   <hr />
